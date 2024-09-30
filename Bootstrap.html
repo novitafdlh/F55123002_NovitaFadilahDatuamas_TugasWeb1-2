@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f4f6; /* Light grey background */
+        }
+
+        /* Header */
+        header {
+            background-color: #a8d5e2; /* Pastel blue */
+            color: #ffffff;
+        }
+
+        /* Sidebar (Form Registration) */
+        .card.registration-card {
+            background-color: #d7ccc8; /* Light brown */
+        }
+
+        .card-header {
+            background-color: #bcaaa4; /* Deeper light brown */
+            color: #ffffff;
+        }
+
+        /* Main content */
+        .card-main {
+            background-color: #bbdefb; /* Lighter pastel blue */
+        }
+
+        /* Form colors */
+        .form-control, .input-group-text, .btn {
+            background-color: #e3f2fd; /* Lighter blue */
+            border-color: #e3f2fd;
+        }
+
+        .form-check-input {
+            background-color: #e3f2fd;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #bcaaa4; /* Light brown */
+            color: #ffffff;
+        }
+
+        /* Custom styles for margins */
+        .content-margin {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        /* Image styles */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .image-item {
+            flex: 1 1 calc(30% - 10px); /* 3 images per row with some space */
+            margin-bottom: 15px;
+        }
+
+        /* Links styles */
+        .link-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .link-container a {
+            display: block;
+            margin: 5px 0;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .link-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="text-white text-center py-3">
+        <h1>HTML</h1>
+        <p>Rangkuman Materi HTML</p>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Sidebar changed to Registration Form with pastel colors -->
+            <aside class="col-md-5 mb-4"> <!-- Sidebar diperbesar ke col-md-5 -->
+                <div class="card registration-card">
+                    <div class="card-header text-center">
+                        Registration Form
+                    </div>
+                    <div class="card-body p-3">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                </div>
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                </div>
+                              </div>
+                            <div class="mb-2">
+                                <label for="inputAddress" class="form-label">Alamat :</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Alamat">
+                            </div>
+                            <div class="mb-2">
+                                <label for="tgl_lhr" class="form-label">Tanggal Lahir :</label>
+                                <input type="date" class="form-control" id="tgl_lhr" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="Gender">Jenis Kelamin :</label> <br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender" value="option1" checked />
+                                    <label class="form-check-label" for="femaleGender">Pria</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender" value="option2" />
+                                    <label class="form-check-label" for="maleGender">Wanita</label>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="validationTooltipUsername" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                    <input type="text" class="form-control" id="validationTooltipUsername" required>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="inputPassword5" class="form-label">Password</label>
+                                <input type="password" id="inputPassword5" class="form-control">
+                            </div>
+                            <div class="mb-2">
+                                <label for="formFile" class="form-label">Foto :</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="mt-3 text-center">
+                                <input class="btn btn-primary btn-sm" type="submit" value="Daftar" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Image section -->
+                <div class="image-container">
+                    <div class="image-item">
+                        <img src="img/Coffee.jpg" alt="Coffe">
+                    </div>
+                    <div class="image-item">
+                        <img src="img/Cat.jpg" alt="Cat">
+                    </div>
+                    <div class="image-item">
+                        <img src="img/404.jpg" alt="404">
+                    </div>
+                    <div class="image-item">
+                        <img src="img/Tag.jpg" alt="Tag">
+                    </div>
+                    <div class="image-item">
+                        <img src="img/Hand.jpg" alt="Hand">
+                    </div>
+                    <div class="image-item">
+                        <img src="img/hello-world.jpg" alt="HelloWorld">
+                    </div>
+                </div>
+                <!-- Links section -->
+                <div class="link-container">
+                    <h5>Source Link</h5>
+                    <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                    <a href="https://id.pinterest.com/" target="_blank">Pinterest</a>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="col-md-7"> <!-- Main content diubah menjadi col-md-7 -->
+                <div class="card card-main">
+                    <div class="card-header text-white" style="background-color: #90caf9;">
+                        Pengenalan HTML
+                    </div>
+                    <div class="card-body">
+                        <h2>Apa itu HTML?</h2>
+                        <p class="content-margin">HTML (HyperText Markup Language) adalah bahasa standar yang digunakan untuk membuat dan menyusun halaman web. Dengan HTML, kita dapat menentukan struktur dari sebuah website, seperti heading, paragraf, gambar, tautan, tabel, dan elemen-elemen lainnya.</p>
+                        <p class="content-margin">HTML terdiri dari elemen-elemen yang disebut dengan "tag". Tag ini digunakan untuk menginstruksikan browser tentang bagaimana konten harus ditampilkan.</p>
+                        <h3>Sejarah HTML</h3>
+                        <dl>
+                            <ul>
+                                <li>HTML 2.0 <br> (RFC1866) disetujui sebagai standard pada 22 September 1995</li>
+                                <li>HTML 3.2 <br> 14 Januari 1996</li>
+                                <li>HTML 4.0 <br> 18 Desember 1997</li>
+                                <li>ISO/IEC 15445:2000 "ISO HTML" <br> Berdasar pada HTML 4.01 Strict - 15 Mei 2000</li>
+                                <li>XHTML 1.0 >> gabungan HTML & XML <br> 24 Januari 2000</li>
+                                <li>XHTML 1.1 <br> 16 Februari 2007</li>
+                            </ul>
+                        </dl>
+                        <h3>Ciri-ciri Dokumen</h3>
+                        <ol>
+                            <li>Ekstensi file berupa <i>.htm</i> atau <i>.html</i></li>
+                            <li>Non case sensitive</li>
+                            <li>Terdiri atas tag-tag pembuka dan penutup</li>
+                            <li>Tag-tag saling berpasang-pasangan</li>
+                        </ol>
+                        <h3>Struktur HTML</h3>
+                        <p class="content-margin">Struktur HTML terdiri dari document information, document header, dan document body. Document information terdiri dari tag html. Document header terdiri dari tag page titled, scripting, style, meta. Document body terdiri dari berbagai tag seperti teks & gambar, link, dll.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Your Website | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

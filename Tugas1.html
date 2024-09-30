@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pengenalan HTML</title>
+    </head>
+    <body>
+            <h1><font color="brown" face="arial">HTML</font><hr color="brown"></h1>
+            <h2><font face="arial">RANGKUMAN MATERI <font color="brown">HTML</font></font></h2>
+            <h3><font face="arial">Pengertian <font color="brown">HTML</font></font></h3>
+
+        <p><font color="brown"><u><b>HTML</b></u></font> atau <i>Hypertext Markup Language</i> 
+            adalah bahasa standar <br>yang digunakan untuk membuat halaman web. <font color="brown">HTML</font> 
+            bekerja dengan <br>menstrukturkan elemen-elemen tertentu yang ditandai dengan tag. Setiap <br>elemen 
+            <font color="brown">HTML</font> biasanya memiliki tag pembuka dan penutup, seperti p untuk <br>paragraf 
+            dan h1 untuk heading. Adapun single tag seperti br dan hr. </p>
+
+        <h3><font face="arial">Sejarah <font color="brown">HTML</font></font></h3>
+
+        <dl>
+            <dt><ul>
+                <dt><li>HTML 2.0</li></dt>
+                <dd>(RFC1866) disetujui sebagai standard pada 22 September 1995</dd>
+                <dt><li>HTML 3.2</li></dt>
+                <dd>14 Januari 1996</dd>
+                <dt><li>HTML 4.0</li></dt>
+                <dd>18 Desember 1997</dd>
+                <dt><li>ISO/IEC 15445:2000"ISO HTML"</li></dt>
+                <dd>Berdasar pada HTML 4.01 Strict-15 Mei 2000</dd>
+                <dt><li>XHTML 1.0 >> gabungan HTML & XML</li></dt>
+                <dd>24 Januari 2000</dd>
+                <dt><li>XHTML 1.1</li></dt>
+                <dd>16 Februari 2007</dd>
+            </ul></dt>
+        </dl>
+
+        <p><h3><font face="arial">Ciri-ciri dokumen <font color="brown">HTML</font> :</font></h3></p>
+
+        <ol>
+            <li>Ekstensi file berupa <i>.htm</i> atau <i>.html</i></li>
+            <li>Non case sensitive</li>
+            <li>Terdiri atas tag-tag pembuka dan penutup</li>
+            <li>Tag-tag saling berpasang-pasangan</li>
+        </ol>
+
+        <h3><font face="arial">Struktur <font color="brown">HTML</font></font></h3>
+
+        <p>Struktur <font color="brown">HTML</font> terdiri dari document information, document header, dan document body. 
+            <br> Document information terdiri dari tag html. Document  header terdiri dari tag page titled, <br>scripting, style,
+            meta. Document body terdiri dari berbagai tag seperti teks & gambar, link, dll.</p><hr color="brown">
+
+        <h3>Gambar dapat ditampilkan seperti berikut :</h3>
+
+        <img src="img/hello-world.jpg" width="200px" height="200px" alt="Hello World!" title="Contoh gambar melalui file"> <br>
+
+        <a href="https://pin.it/6Vp3UIinW" target="_blank">Gambar melalui link</a>
+        
+        <!--Contoh penggunaan komentar-->
+
+    <h2>Registration Form</h2>
+
+    <form action="/submit_registration" method="POST" enctype="multipart/form-data">
+        <table border="1" bordercolor="brown">
+            <tr>
+                <td><label for="first_name">Nama Depan:</label></td>
+                <td><input type="text" id="first_name" name="first_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="last_name">Nama Belakang:</label></td>
+                <td><input type="text" id="last_name" name="last_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Alamat:</label></td>
+                <td><input type="text" id="address" name="address" required></td>
+            </tr>
+            <tr>
+                <td><label for="birthdate">Tanggal Lahir:</label></td>
+                <td><input type="date" id="birthdate" name="birthdate" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis Kelamin:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Pria</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Wanita</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="photo">Foto:</label></td>
+                <td><input type="file" id="photo" name="photo" accept="image/*" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;"><input type="submit" value="Daftar"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html
